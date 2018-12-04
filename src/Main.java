@@ -2,12 +2,22 @@ public class Main {
 
     public static void main(String[] args) {
         // First Attempt - What the README results are based on
+
+        // A = (ourG ^ ourA) % ourP
+        // (2, 213962984, 35530787)
         int answer = emod(5, 213962984, 658996103);
         System.out.println("Our A: " + answer);
+
+        // B = (theirG ^ ourB) % theirP
+        // (5, 28406022, 658996103)
         answer = emod(2, 28406022, 35530787);
         System.out.println("Our B: " + answer);
+
+        // This does not seem right
         answer = emod(28406022, 213962984, 35530787);
         System.out.println("Our Alice key: " + answer);
+
+        // This does not seem right
         answer = emod(213962984,28406022,658996103);
         System.out.println("Our Bob key: " + answer);
 

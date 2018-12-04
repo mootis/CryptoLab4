@@ -37,6 +37,6 @@ All your code.
 ####Answers for Task 1:
 1) Our partner group was AK and KZ
 2) To generate the Diffie-Hellman Public key we chose the safe prime p = 35530787 and generator g = 2 (See Main.java)
-3) We posted these to the discussion on Canvas
+3) We posted these to the discussion on Canvas - Sent A = 170879926 and B = 30328638, Received A = 213962984 and B = 28406022
 4) We verified privately that the keys we calculated were the same using our p: key = 27705812 
 5) We verified privately that the keys we calculated were the same using their p: key = 6192400385
