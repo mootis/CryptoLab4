@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        /*
+        // First Attempt - What the README results are based on
         int answer = emod(5, 213962984, 658996103);
         System.out.println("Our A: " + answer);
         answer = emod(2, 28406022, 35530787);
@@ -10,7 +10,9 @@ public class Main {
         System.out.println("Our Alice key: " + answer);
         answer = emod(213962984,28406022,658996103);
         System.out.println("Our Bob key: " + answer);
-        */
+
+        // Second attempt
+        /*
         int answer;
         answer = emod(2,1234,35530787);
         System.out.println("Our A: " + answer);
@@ -20,6 +22,7 @@ public class Main {
         System.out.println(answer);
         answer = emod(28406022,1234,35530787);
         System.out.println(answer);
+        */
     }
 
     public static int emod(int a, int b, int c) {
