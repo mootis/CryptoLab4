@@ -35,7 +35,6 @@ public class Main {
 
         // Second attempt
         /*
-        int answer;
         answer = emod(2,1234,35530787);
         System.out.println("Our A: " + answer);
         answer = emod(5,5678,658996103);
@@ -72,6 +71,47 @@ public class Main {
         } else {
             return (((a % c) * emod(a, b - 1, c)) % c);
         }
-        
+
     }
+
+    // Pollard's Rho method - a = alpha, b = beta
+    public int[] pr(int a, int b) {
+        int[] answer = {0, 0, 0, 0};
+        boolean notComplete = true;
+        while (notComplete) {
+            // i_1
+            answer[0] = newValue;
+
+            // j_1
+            answer[1] = newValue;
+
+            // i_2
+            answer[2] = newValue;
+
+            // j_2
+            answer[3] = newValue;
+
+            // Complete checker
+            if ((a ^ answer[0] * b ^ answer[1]) == (a ^ answer[2] * b ^ answer[3])) {
+                notComplete = false;
+            }
+        }
+        return answer;
+    }
+
+    /*
+    // Baby step giant step where a is generator g and b is the prime number p
+    public int bsgs(int a, int b) {
+        int[] alpha;
+        double m = Math.sqrt(b);
+        int g;
+
+        int[] array = new int[b];
+        for (int i = 0; i < b; i++) {
+            array[i] = i;
+        }
+
+        int answer = (b(a ^ (-m))^g);
+    }
+    */
 }
